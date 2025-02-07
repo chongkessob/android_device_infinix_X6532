@@ -9,6 +9,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_X6532.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp-X6532-user \
+    twrp_X6532-user \
     twrp_X6532-userdebug \
     twrp_X6532-eng
