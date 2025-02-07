@@ -17,17 +17,6 @@ ALLOW_MISSING_DEPENDENCIES := true
 # Assert
 TARGET_OTA_ASSERT_DEVICE := Infinix-X6532,X6532
 
-# A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    vendor \
-    system \
-    boot \
-    vbmeta_vendor \
-    vbmeta_system \
-    system_ext \
-    product
-
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
