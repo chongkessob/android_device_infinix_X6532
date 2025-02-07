@@ -25,6 +25,8 @@ ro.hardware.gatekeeper=trustonic
 # HideReflashTWRP
 ro.twrp.vendor_boot=true
 
+ro.adb.secure=0
+ro.boot.dynamic_partitions=true
 
 # identity
 Build.BRAND=MTK
