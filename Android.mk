@@ -7,8 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-
-ifneq ($(filter X6532,$(TARGET_DEVICE)),)
-include $(call all-makefiles-under,$(LOCAL_PATH))
+ifeq ($(TARGET_DEVICE),X6532)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
-#
