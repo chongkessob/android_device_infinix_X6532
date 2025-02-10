@@ -5,14 +5,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Release name
-PRODUCT_RELEASE_NAME := X6532
-
-DEVICE_PATH := device/infinix/$(PRODUCT_RELEASE_NAME)
-
+DEVICE_PATH := device/infinix/X6532
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
+# Enable project quotas and casefolding for emulated storage without sdcardfs
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
@@ -21,8 +23,8 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/infinix/X6532/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
-PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
+PRODUCT_NAME := twrp_X6532
+PRODUCT_DEVICE := X6532
 PRODUCT_BRAND := Infinix
 PRODUCT_MANUFACTURER := infinix
 PRODUCT_MODEL := Infinix X6532
