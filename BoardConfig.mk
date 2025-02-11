@@ -146,5 +146,3 @@ BUILD_BROKEN_MISSING_REQUIRED_MODULES := true # may not really be needed
 
 # Python
 TW_INCLUDE_PYTHON := true
-endif
-#
