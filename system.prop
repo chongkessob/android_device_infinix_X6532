@@ -6,7 +6,6 @@ ro.sys.usb.storage.type=mtp
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
-#
 ro.crypto.metadata.enabled=true
 ro.crypto.support_metadata_encrypt=true
 ro.crypto.uses_fs_ioc_add_encryption_key=true
@@ -14,16 +13,8 @@ ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.options=::v2
 
-# Enable project quotas and casefolding for emulated storage without sdcardfs - SDCard replacement functionality
-external_storage.projid.enabled=1
-external_storage.casefold.enabled=1
-external_storage.sdcardfs.enabled=0
-
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
-
-# HideReflashTWRP
-ro.twrp.vendor_boot=true
 
 ro.adb.secure=0
 ro.boot.dynamic_partitions=true
@@ -33,7 +24,7 @@ Build.BRAND=MTK
 ro.soc.manufacturer=Mediatek
 ro.mediatek.version.branch=alps-mp-u0.mssi1
 ro.vendor.tran.version.release=X6532-V632ABCDEFGHIJKLMNO-UGo-OP-241017V2228
-ro.vendor.mediatek.platform=MT6768
+ro.vendor.mediatek.platform=MT6769
 ro.vendor.mtk_f2fs_enable=1
 ro.hardware.egl=meow
 
@@ -45,6 +36,3 @@ ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_trustonic_tee_support=1
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.tran.trans_pay_tee=1
-
-
-keymaster_ver=4.1
