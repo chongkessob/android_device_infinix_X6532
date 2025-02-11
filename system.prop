@@ -33,6 +33,9 @@ ro.hardware.egl=meow
 ro.hardware.kmsetkey=trustonic
 ro.hardware.paytrigger=trustonic
 ro.vendor.mtk_tee_gp_support=1
+
+# keymaster
+keymaster_ver=4.1
 ro.vendor.mtk_trustonic_tee_support=1
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.tran.trans_pay_tee=1
